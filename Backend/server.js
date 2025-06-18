@@ -19,10 +19,15 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(cookieParser());
 
+// const corsOptions = {
+//     origin: 'https://alok-netflix-clone.onrender.com', // Or your deployed frontend URL
+//     credentials: true
+// };
+
 const corsOptions = {
-    origin: 'https://alok-netflix-clone.onrender.com', // Or your deployed frontend URL
+    origin: ['http://localhost:3000', 'https://alok-netflix-clone.vercel.app'],
     credentials: true
-};
+  };
 
 app.use(cors(corsOptions));
 
