@@ -20,7 +20,7 @@ app.use(express.json());
 app.use(cookieParser());
 
 const corsOptions = {
-    origin: 'http://localhost:3000', // Or your deployed frontend URL
+    origin: 'https://alok-netflix-clone.onrender.com', // Or your deployed frontend URL
     credentials: true
 };
 
