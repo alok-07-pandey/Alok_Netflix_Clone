@@ -68,9 +68,8 @@ app.use(cookieParser());
 // ✅ Robust CORS config
 const allowedOrigins = [
   'http://localhost:3000',
-  'https://alok-netflix-clone.vercel.app'
+  'https://coders-netflix-clone.vercel.app/',
 ];
-
 const corsOptions = {
   origin: function (origin, callback) {
     if (!origin || allowedOrigins.includes(origin)) {
